@@ -15,15 +15,17 @@
       }
       .pricing-container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         flex-shrink: 0;
         height: 100vh;
         overflow: auto;
+        gap: 50px;
 
       }
       .pricing-plan {
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
         background: linear-gradient(to right, #91F1EF, #FFD5E0);;
         align-items: center;
@@ -66,8 +68,7 @@
       @media (max-width: 1250px) {
         .pricing-container{
           flex-direction: column;
-          flex-shrink: 0;
-          justify-content: space-between;
+          justify-content: flex-start;
           gap: 30px;
           }
       }
